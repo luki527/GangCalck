@@ -618,7 +618,7 @@ $("#loginBtn").addEventListener("click", async () => {
   if (!sync) return;
   syncMsg = "Loguję…"; renderSync();
   try{ await sync.login($("#pw").value); $("#pw").value = ""; pwOpen = false; syncMsg = ""; }
-  catch(e){ syncMsg = "Nie udało się zalogować, sprawdź hasło."; }
+  catch(e){ syncMsg = "Nie udało się zalogować (" + ((e && (e.code || e.message)) || "nieznany błąd") + ")."; }
   renderSync();
 });
 $("#pw").addEventListener("keydown", e => { if (e.key === "Enter") $("#loginBtn").click(); });
