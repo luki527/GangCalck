@@ -2,7 +2,7 @@
 // (Project settings > Your apps > firebaseConfig). Zostaw cudzysłowy i przecinki.
 // Dopóki apiKey zawiera "WKLEJ", kalkulator działa lokalnie (bez wspólnych danych).
 window.FIREBASE_CONFIG = {
-  apiKey: "AIzaSyBmH5ecYl4EgoOjqEGwjEyt1AfmXhf31joJ",
+  apiKey: "AIzaSyBmH5ecYl4EgoOjqEGwjEyt1AfmXhf31jo",
   authDomain: "kalkulator-gangster.firebaseapp.com",
   projectId: "kalkulator-gangster",
   storageBucket: "kalkulator-gangster.firebasestorage.app",
